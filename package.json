@@ -1,0 +1,29 @@
+{
+  "name": "i18n-pwa-ssr-tan",
+  "version": "1.0.0",
+  "description": "Template for ssr,i18n,pwa & tanstack",
+  "main": "index.js",
+  "packageManager": "npm@10.9.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "node apps/demo-backend/dist/demo-backend/src/main"
+  },
+  "author": "Chima Okwuokei",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "dependencies": {
+    "@shadcn/ui": "^0.0.4",
+    "i18next": "^24.2.0",
+    "i18next-browser-languagedetector": "^8.0.2",
+    "i18next-fs-backend": "^2.6.0",
+    "i18next-http-backend": "^3.0.1",
+    "react-i18next": "^15.4.0"
+  }
+}
